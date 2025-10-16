@@ -84,7 +84,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[85vh] bg-gradient-to-br from-[#0a1929] via-[#122942] to-[#1a3a5a] overflow-hidden flex items-center pt-24 pb-12">
+    <section className="relative min-h-[100vh] sm:min-h-[90vh] lg:min-h-[85vh] bg-gradient-to-br from-[#0a1929] via-[#122942] to-[#1a3a5a] overflow-hidden flex items-center pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24">
       {/* Animated Canvas Background */}
       <canvas
         ref={canvasRef}
@@ -97,10 +97,10 @@ export default function Hero() {
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left: Content */}
-          <div className="space-y-6 lg:space-y-8">
+          <div className="space-y-4 sm:space-y-6 lg:space-y-8">
             <div className="inline-block">
               <span className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm text-white/90">
                 <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
@@ -108,7 +108,7 @@ export default function Hero() {
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
               Profesyonel
               <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Görüntü & Ses
@@ -116,11 +116,11 @@ export default function Hero() {
               Sistemleri
             </h1>
 
-            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-xl">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl">
               Yerel ve global projelerde çözüm ortaklığı ile tüm görüntü ve ses teknolojilerine yönelik profesyonel çözümler sunuyoruz.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
               <a
                 href="#cozumlerimiz"
                 className="group relative inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#122942] rounded-xl font-semibold overflow-hidden transition-all hover:scale-105 hover:shadow-2xl"
@@ -139,15 +139,15 @@ export default function Hero() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-8 pt-6 sm:pt-8 border-t border-white/10">
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-8 pt-4 sm:pt-6 md:pt-8 border-t border-white/10">
               {[
                 { value: '500+', label: 'Aktif Müşteri' },
                 { value: '10K+', label: 'Aktif Ekran' },
                 { value: '15+', label: 'Ülke' },
               ].map((stat, i) => (
                 <div key={i}>
-                  <div className="text-2xl sm:text-3xl font-bold text-white mb-1">{stat.value}</div>
-                  <div className="text-xs sm:text-sm text-gray-400">{stat.label}</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">{stat.value}</div>
+                  <div className="text-[10px] sm:text-xs md:text-sm text-gray-400">{stat.label}</div>
                 </div>
               ))}
             </div>
