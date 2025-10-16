@@ -57,10 +57,11 @@ export default function DigitalMenuboard() {
             {/* Left - Image/Visual */}
             <div className="relative">
               <div className="relative h-96 rounded-2xl shadow-2xl overflow-hidden">
-                <img
+                <Image
                   src="/images/digital-signage/Digital-Menuboard.webp"
                   alt="Digital Menuboard"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               {/* Decorative Elements */}
@@ -74,7 +75,7 @@ export default function DigitalMenuboard() {
                 Bu teknolojik yenilik, işletmelere bir dizi avantaj sunar. Öncelikle, müşterilere yemek seçeneklerini çekici bir şekilde sunar. Yüksek çözünürlüklü ekranlar sayesinde, yemekler ve içecekler canlı renklerle ve çekici görsellerle sergilenir.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Digital Menuboard'un esnekliği de dikkat çekicidir. İçerik anında güncellenebilir ve özel teklifler, günlük öğünler veya mevsimsel menüler kolayca eklenip kaldırılabilir. Bu, işletmelerin taleplere hızla yanıt vermesini sağlar ve müşterilere güncel bilgiler sunar.
+                Digital Menuboard&apos;un esnekliği de dikkat çekicidir. İçerik anında güncellenebilir ve özel teklifler, günlük öğünler veya mevsimsel menüler kolayca eklenip kaldırılabilir. Bu, işletmelerin taleplere hızla yanıt vermesini sağlar ve müşterilere güncel bilgiler sunar.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Ayrıca, Digital Menuboard, işletmelerin operasyonel verimliliğini artırır. Fiyatlar otomatik olarak güncellenebilir ve bu da fiyat değişikliklerini kolayca yönetmeyi sağlar. Ayrıca, kağıt kullanımını azaltarak çevresel etkiyi azaltır.

@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function WhatIsDigitalSignage() {
   return (
     <section id="nedir" className="w-full">
@@ -7,10 +9,11 @@ export default function WhatIsDigitalSignage() {
       <div className="grid lg:grid-cols-2">
         {/* Left - Full height Image */}
         <div className="relative min-h-[600px] lg:min-h-[700px]">
-          <img
+          <Image
             src="/images/digital-signage/Digital-Signage-Nedir.png"
             alt="Digital Signage Nedir"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
           />
         </div>
 

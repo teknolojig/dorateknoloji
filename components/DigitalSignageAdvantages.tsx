@@ -50,7 +50,7 @@ export default function DigitalSignageAdvantages() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#122942] mb-6">
-              Digital Signage'ın Avantajları
+              Digital Signage&apos;ın Avantajları
             </h2>
             <div className="w-24 h-1 bg-[#122942] mx-auto"></div>
           </div>

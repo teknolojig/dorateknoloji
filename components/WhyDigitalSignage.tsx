@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Eye, RefreshCw, Users, DollarSign, BarChart, Leaf } from 'lucide-react';
 
 export default function WhyDigitalSignage() {
@@ -78,10 +79,11 @@ export default function WhyDigitalSignage() {
 
         {/* Right - Full height Image */}
         <div className="relative min-h-[600px] lg:min-h-[700px]">
-          <img
+          <Image
             src="/images/digital-signage/Digital-Signage-Screen.jpg"
             alt="Digital Signage Screen"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
           />
         </div>
       </div>
